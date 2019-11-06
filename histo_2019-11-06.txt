@@ -1,0 +1,400 @@
+    1  sudo apt update && sudo apt upgrade
+    2  su -
+    3  sudo su
+    4  ls -lrt
+    5  ls
+    6  pwd
+    7  cd ..
+    8  ls
+    9  cd /test
+   10  cd test/
+   11  ls
+   12  ls -lrt | tail -2
+   13  ls
+   14  pwd
+   15  touch a b ; mkdir -p /tmp/old
+   16  ls
+   17  pwd
+   18  cd ..
+   19  ls
+   20  cd ..
+   21  ls
+   22  ls -rt | tail -2
+   23  ls -rt 
+   24  h
+   25  hisotry
+   26  history
+   27  ls -ld
+   28  ls /tmp/old/
+   29  ls -ld /tmp/old/
+   30  cd
+   31  ls
+   32  ls /
+   33  wich ls
+   34  which ls
+   35  ls /bin
+   36  ls /bin | grep tail
+   37  which tail
+   38  ls /
+   39  id
+   40  sudo id
+   41  id
+   42  ls -rt | tail -2
+   43  ls -rt | tail -2 | xargs -i echo '{}' /tmp/old .
+   44  ls -rt | tail -2 | xargs -i echo mv '{}' /tmp/old .
+   45  ls -rt | tail -2 | xargs -i echo mv '{}' /tmp/old . | sh
+   46  ls
+   47  pwd
+   48  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old . | sh
+   49  cd ..
+   50  ls
+   51  cd ..
+   52  ls
+   53  cd tmp/old
+   54  ls
+   55  cd tmp/
+   56  ls
+   57  mkdir old
+   58  ls
+   59  cd old/
+   60  ls
+   61  cd
+   62  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old . | sh
+   63  cd ..
+   64  cd tmp/ol
+   65  cd tmp/
+   66  ls
+   67  mkdir old
+   68  ls
+   69  cd old/
+   70  ls
+   71  mkdir .
+   72  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old . | sh
+   73  ls
+   74  c
+   75  cd
+   76  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old . | sh
+   77  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old . 
+   78  which old
+   79  ls
+   80  rm old
+   81  rm -R old
+   82  ls
+   83  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old . 
+   84  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old . | sh
+   85  ls
+   86  cd ..
+   87  cd /tmp/
+   88  ls
+   89  mkdir old
+   90  ls
+   91  cd
+   92  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old . 
+   93  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old . | sh
+   94  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old. | sh
+   95  cd ..
+   96  cd /tmp/
+   97  ls
+   98  rm -R old.
+   99  ls
+  100  mkdir old
+  101  ls
+  102  cd old
+  103  ls
+  104  mkdir .
+  105  ls
+  106  cd
+  107  ls
+  108  touch w z
+  109  ls
+  110  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old.
+  111  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old. | sh
+  112  ps -elf
+  113  ps -edf
+  114  ps -axf
+  115  ps -auxf
+  116  htop
+  117  top
+  118  ps
+  119  ps ux
+  120  ps a
+  121  ps -edf
+  122  ps -elf
+  123  df -h
+  124  df -k
+  125  free -h
+  126  ls -l /bin | more
+  127  ls -l /bin | less
+  128  ls > /tmp/ls.log
+  129  cat /tmp/ls.log 
+  130  more /tmp/ls.log 
+  131  tac /tmp/ls.log 
+  132  cat /etc/passwd | more
+  133  echo bonjour | rev
+  134  echo bonjour | wc
+  135  echo bonjour | wc > /tmp/count.log
+  136  man wc
+  137  echo bonjour | wc
+  138  echo $?
+  139  echo bonjour | wc > /tmp/count.log
+  140  echo $?
+  141  man exit
+  142  ls | more
+  143  cat /etc/passwd | cut -d: -f1
+  144  man cut
+  145  cat /etc/passwd | cut -d: -f6
+  146  head /etc/passwd
+  147  cat /etc/passwd | cut -d: -f6
+  148  cat /etc/passwd | awk -F: '{print $3}'
+  149  wget 192.168.22.13:7777/a.log
+  150  cat a.log
+  151  wc a.log
+  152  head a.log
+  153  cat a.log | awk '{print $1}'
+  154  cat a.log | awk '{print $1}' | sort | uniq -c | sort
+  155  cat a.log | awk '{print $1}' | sort | uniq -c | sort -n
+  156  head a.log
+  157  cat a.log | awk '{print $5}' | sort | uniq -c | sort -n
+  158  cat a.log | awk '{print $5}' | sort | uniq -c | sort 
+  159  cat a.log | awk '{print $5}' | sort | uniq -c | sort -n
+  160  cat a.log | awk '{print $5}' | sort | uniq | sort -n
+  161  cat a.log | awk '{print $6}' | sort | uniq | sort -n
+  162  cat a.log | awk '{print $7}' | sort | uniq | sort -n
+  163  cat a.log | awk '{print $7}' | sort | uniq -c | sort -n
+  164  head a.log
+  165  man awk
+  166  head a.log
+  167  cat a.log | rev | awk '{print $1}' | sort | uniq -c | sort -n
+  168  head a.log | rev
+  169  cat a.log | rev | awk '{print $1}' | uniq-c
+  170  cat a.log | rev | awk '{print $1}' | uniq
+  171  cat a.log | rev | awk '{print $2}' | uniq
+  172  cat a.log | rev | awk '{print $2}' | sort | uniq -c | sort -n
+  173  head a.log
+  174  cat a.log | rev | awk '{print $2}' | sort | uniq -c | sort 
+  175  cat a.log | rev | awk '{print $2}' | sort | uniq | sort 
+  176  cat a.log | rev | awk '{print $2}' | sort | uniq | sort -n
+  177  man sort
+  178  cat a.log | rev | awk '{print $2}' | sort | uniq | sort -r
+  179  cat a.log | rev | awk '{print $2}' 
+  180  cat a.log | rev | awk '{print $3}' 
+  181  cat a.log | rev | awk '{print $3}' | sort -r
+  182  cat a.log | rev | awk '{print $3}' | sort -rn 
+  183  cat a.log | rev | awk '{print $3}' | sort -n 
+  184  cat a.log | rev | awk '{print $3}' | sort -n | head 
+  185  cat a.log | rev | awk '{print $3}' | sort -n | tail
+  186  man tail
+  187  cat a.log | rev | awk '{print $3}' | sort -n | tail1
+  188  cat a.log | rev | awk '{print $3}' | sort -n | tail -1
+  189  cat a.log | rev | awk '{print $3}' | sort -n | head -1 
+  190  nano test.sh
+  191  nano del.sh
+  192  bash del.sh
+  193  nano del.sh
+  194  nano test.sh
+  195  ls
+  196  nano del.sh
+  197  sudo su
+  198  nano shebang.sh
+  199  vim arg.sh
+  200  nano arg.sh
+  201  ls -I arg.sh
+  202  ./arg.sh
+  203  sudo su
+  204  mkdir compress
+  205  ls
+  206  touch compress/{a,z}
+  207  echo compress/{a,z}
+  208  find compress/
+  209  man tar
+  210  tar zcvf test.tar.gz compress/
+  211  ls -lrt test.tar.gz 
+  212  rm -rf compress/
+  213  tar zxcf test.tar.gz 
+  214  tar zxvf test.tar.gz 
+  215  tar tvf test.tar.gz 
+  216  ls -l /mtn/c
+  217  ls -l /mnt/c
+  218  cp test.tar.gz /mnt/c/Users/aorig/Desktop/.
+  219  ls
+  220  mkdir rendu
+  221  cd rendu
+  222  ls
+  223  man mkdir
+  224  nano exo1.sh
+  225  ./exo1.sh
+  226  date
+  227  chmod rxw
+  228  sudo su
+  229  ssh-keygen
+  230  cd test
+  231  ls
+  232  cd ..
+  233  cd test
+  234  ls
+  235  cd /.ssh
+  236  l
+  237  scd ..
+  238  cd ..
+  239  ls
+  240  cd /home/test
+  241  ls
+  242  cd /.ssh
+  243  cd /home/test/.ssh
+  244  ls
+  245  cat id_rsa
+  246  cat id_rsa.pub 
+  247  cd ~
+  248  mkdir -p gits
+  249  ls
+  250  /gits git clone git@github.com:AlexanderJollet/test.git
+  251  ls
+  252  cd gits
+  253  git clone git@github.com:AlexanderJollet/test.git
+  254  ls
+  255  cd test
+  256  ls
+  257  nano read me
+  258  ls
+  259  nano README.md 
+  260  cat 
+  261  cat README.md 
+  262  ls -la
+  263  cat .git/config
+  264  git status
+  265  git diff
+  266  cd git
+  267  cd gits/test/
+  268  git commit README.md 
+  269  cd gits/test/
+  270  ls
+  271  git status
+  272  git add README.md 
+  273  ls
+  274  git commit README.md 
+  275  git pull README.md
+  276  git push README.md
+  277  git status 
+  278  git branch 
+  279  git branch branch1
+  280  git branch 
+  281  git checkout branch1 
+  282  nano fichier_a
+  283  git add fichier_a 
+  284  git commit -m 'fichier_a' 
+  285  git config --global AlexanderJollet@alexander.jollet3@gmail.com
+  286  git config --global alexanderjollet3@gmail.com
+  287  git config --global user.email "alexanderjollet3@gmail.com"
+  288  git commit -m 'fichier_a' 
+  289  git config --global user.email "alexander.jollet3@gmail.com"
+  290  git commit -m 'fichier_a' 
+  291  git config --global user.name "AlexanderJollet"
+  292  git commit -m 'fichier_a' 
+  293  git status 
+  294  git push --set-upstream origin branch1 
+  295  git checkout branch1 
+  296  git add fichier_a 
+  297  git commit -m 'fichier_a' 
+  298  git b
+  299  git pull
+  300  git checkout 
+  301  git checkout master 
+  302  git pull 
+  303  git status 
+  304  git branch 
+  305  git branch -d branch1 
+  306  git branch 
+  307  git checkout -b toto
+  308  git branch 
+  309  git branch -b toto 
+  310  git branch -d toto 
+  311  git checkout master 
+  312  git branch -d toto 
+  313  nano fichier_a 
+  314  git diff
+  315  git commit -m 'ajout cc' fichier_a 
+  316  git push 
+  317  git pull 
+  318  nano fichier_a 
+  319  git commit -m 'fix commit' fichier_a *
+  320  git commit -m 'fix commit' fichier_a 
+  321  git add fichier_a 
+  322  git commit -m 'fix commit' fichier_a 
+  323  git commit -m 'fix commit' 
+  324  git push
+  325  touch bbb
+  326  touch ccc
+  327  git status
+  328  git stash
+  329  ls -l
+  330  cd ..
+  331  mkdir ipssi
+  332  ls
+  333  cd ipssi/
+  334  git@github.com:AlexanderJollet/ipssi_2019.git
+  335  git clone git@github.com:AlexanderJollet/ipssi_2019.git
+  336  ls
+  337  cd ipssi_2019/
+  338  ls
+  339  nano README.md 
+  340  git add README.md 
+  341  git commit -m README.md 
+  342  git push
+  343  cd ..
+  344  ls
+  345  cd rendu/
+  346  ls
+  347  cd ..
+  348  cd gits
+  349  ls
+  350  mkdir scripts
+  351  ls
+  352  c scripts/
+  353  cd scripts/
+  354  ls
+  355  cp -a rendu scripts
+  356  cd ..
+  357  cd ..cd ~
+  358  cd ~
+  359  cp -a rendu scripts
+  360  cd gits/scripts/
+  361  ls
+  362  l
+  363  sls
+  364  ls
+  365  sl
+  366  l
+  367  ls
+  368  ls -la
+  369  cp -a ~/rendu ~/gits/scripts
+  370  ls
+  371  cd  rendu/
+  372  ls
+  373  cd ..
+  374  cd rendu/
+  375  rm test_2019-11-05.tar.gz 
+  376  ls
+  377  cd ..
+  378  git add rendu/
+  379  git add rendu
+  380  git add commit -m rendu/
+  381  git add commit -m rendu
+  382  git add rendu/
+  383  cd ..
+  384  ls
+  385  cd ipssi/
+  386  ls
+  387  cd ipssi_2019/
+  388  ls
+  389  git add rendu/
+  390  cp -a ~/rendu ~/gits/ipssi/ipssi_2019/
+  391  ls
+  392  cd rendu/
+  393  ls
+  394  rm test_2019-11-05.tar.gz 
+  395  ls
+  396  cd ..
+  397  git add rendu/
+  398  git commit -m 'ajout scripts' 
+  399  git push
+  400  history > histo_2019-11-06.txt
