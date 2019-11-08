@@ -10,4 +10,3 @@ while fichier.readline():
     n+=1
 
 print(n)
-
