@@ -1,0 +1,14 @@
+- name: install the latest version of Nginx
+  package:
+    name:
+      - nginx
+    state: latest
+
+- name: deploy nginx config
+  template:
+     src: nginx.j2
+     dest: /etc/nginx/nginx.conf
+     check_mode: yes
+
+- name: reload nginx
+  command: nginx -s reload
