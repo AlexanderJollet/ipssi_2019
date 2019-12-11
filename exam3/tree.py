@@ -16,7 +16,7 @@ def show_tree(size) :
         sapin = sapin + (s * "x").center(size)
         sapin = sapin + "\n"
 
-    for t in range(size_tronc):
+    for t in range (int(size_tronc)):
         if (tronc == 1):
             sapin = sapin + ("x".center(size))
         else :
